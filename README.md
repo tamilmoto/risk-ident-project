@@ -5,20 +5,24 @@ The repository contains Dockerfile for apache service and Helm chart for deploym
 
 # Build Image using dockerfile
 
-> **$ docker build -t risk-ident-project:1.1 tamilmoto/RISK_IDENT_Project**
+```console
+ $ docker build -t risk-ident-project:1.1 tamilmoto/RISK_IDENT_Project
+```
 
 # Installing the Chart
-To install the chart with the release name *my-release:*
+To install the chart with the release name `my-release`:
 
-> **$ helm install --name my-release tamilmoto/RISK_IDENT_Project**
-
+```console
+$ helm install --name my-release tamilmoto/RISK_IDENT_Project
+```
 The command deploys Apache service on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation.
 
-Tip: List all releases using helm list
+> **Tip**: List all releases using `helm list`
 
 # Uninstalling the Chart
 To uninstall/delete the my-release deployment:
 
-> **$ helm delete my-release**
-
+```console
+$ helm delete my-release
+```
 The command removes all the Kubernetes components associated with the chart and deletes the release.
