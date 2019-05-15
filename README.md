@@ -1,4 +1,4 @@
-# RISK IDENT Project
+# RISK IDENT Project Hello World!
 This private repository created for RISK IDENT task.
 
 The repository contains Dockerfile for apache service and Helm chart for deployment in Kubernetes.
@@ -18,6 +18,12 @@ $ helm install --name my-release risk-ident-project
 The command deploys Apache service on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation.
 
 > **Tip**: List all releases using `helm list`
+
+# Validate the deployement
+
+```console
+http://<your ip address:30080
+```
 
 # Uninstalling the Chart
 To uninstall/delete the my-release deployment:
