@@ -1,19 +1,19 @@
 # RISK_IDENT_Project
-This is private repository created for RISK IDENT task.
+This private repository created for RISK IDENT task.
 
 The repository contains Dockerfile for apache service and Helm chart for deployment in Kubernetes.
 
 # Build Image using dockerfile
 
 ```console
- $ docker build -t risk-ident-project:1.1 tamilmoto/RISK_IDENT_Project
+ $ docker build -t risk-ident-project:1.1 RISK_IDENT_Project
 ```
 
 # Installing the Chart
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm install --name my-release tamilmoto/RISK_IDENT_Project
+$ helm install --name my-release RISK_IDENT_Project
 ```
 The command deploys Apache service on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation.
 
