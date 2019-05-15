@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: risk-ident-apache
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: risk-ident-apache
+  template:
+    metadata:
+      labels:
+        app: risk-ident-apache
+    spec:
+      containers:
+        - name: risk-ident-apache
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            -  containerPort: 80
+               protocol: TCP
