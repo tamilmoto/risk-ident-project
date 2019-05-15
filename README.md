@@ -6,7 +6,7 @@ The repository contains Dockerfile for apache service and Helm chart for deploym
 # Build Image using dockerfile
 
 ```console
- $ docker build -t risk-ident-project:1.1 RISK_IDENT_Project
+$ docker build -t risk-ident-project:1.1 RISK_IDENT_Project
 ```
 
 # Installing the Chart
