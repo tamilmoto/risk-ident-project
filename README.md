@@ -6,14 +6,14 @@ The repository contains Dockerfile for apache service and Helm chart for deploym
 # Build Image using dockerfile
 
 ```console
-$ docker build -t risk-ident-project:1.1 risk-ident-project
+$ docker build -t risk-ident-project:1.1 .
 ```
 
 # Installing the Chart
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm install --name my-release risk-ident-project
+$ helm install --name my-release .
 ```
 The command deploys Apache service on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation.
 
